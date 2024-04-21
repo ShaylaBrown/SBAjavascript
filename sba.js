@@ -76,9 +76,23 @@ const CourseInfo = {
     }
   ];
   
+  let learner_id1 = {
+    "id" : 125
+   //compute average OUTPUT avg: 0.985, // (47 + 150) / (50 + 150)
+  // compute OUTPUT=  1: (submission.score / points_possible)
+  // compute OUTPUT =  2 : (submission.score / points_possible)
+
+  }
+  let learner_id2 = {
+    "id" : 132
+   //compute average OUTPUT avg: 0.985, // (47 + 150) / (50 + 150)
+  // compute OUTPUT=  1: (submission.score / points_possible)
+  // compute OUTPUT =  2 : (submission.score / points_possible)
+  }
+  
   function getLearnerData(course, ag, submissions) {
     // here, we would process this data to achieve the desired result.
-    const result = [
+    const result = [ //{LEARNER_ID1} && {LEARNER_ID2}
       {
         id: 125,
         avg: 0.985, // (47 + 150) / (50 + 150)
@@ -100,3 +114,8 @@ const CourseInfo = {
   
   console.log(result);
   
+
+
+
+
+

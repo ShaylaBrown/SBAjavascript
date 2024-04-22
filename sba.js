@@ -87,6 +87,10 @@ let assignment_id1321 = 39 / 50
 let assignment_id1322 = (140 - 15) / 150
 // late: (140 - 15) / 150
 
+if (assignment_id1322 = (140 - 15) / 150)
+	console.log('late!');
+else
+	console.log('On Time.');
 
 
 // var average = [average125.sum / 290]; 
@@ -189,20 +193,3 @@ const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
 console.log(result);
 
 
-
-function getData(salesArr,reviewArr,likeArr){
- 
-  let sumData = function (arr) {
-  let total = 0;
-  for (let i = 0; i<arr.length; i++){
-   total += arr[i][1];
-  }
-   return total;
-  }
-  let result = {
-   sumAmount: sumData(salesArr),
-   sumReview: sumData(reviewArr),
-   sumLike: sumData(likeArr)
-  };
-  return result;
-  };

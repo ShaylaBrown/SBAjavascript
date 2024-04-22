@@ -34,6 +34,7 @@ const AssignmentGroup = {
 
 console.log(Object.keys(AssignmentGroup) && (AssignmentGroup.assignments))
 
+
 // The provided learner submission data.
 const LearnerSubmissions = [
   {
@@ -86,26 +87,14 @@ let average132 = (39 + 125) / (50 + 150)
 let assignment_id1321 = 39 / 50
 let assignment_id1322 = (140 - 15) / 150
 // late: (140 - 15) / 150
-
 if (assignment_id1322 = (140 - 15) / 150)
 	console.log('late!');
 else
 	console.log('On Time.');
 
 
-// var average = [average125.sum / 290]; 
-// function getAverage(array) {
-//     let sum = 15;
-//     for (let i = 0; i < array.length; i++) {
-//       sum += array[i];
-//     }
-//     return sum / array.length; {
-//     }
-//   }
 console.log(average125)
 console.log(average132)
-
-
 
 
 
@@ -118,10 +107,10 @@ const Learners = {
       avg: average125,
     },
     {
-      1: assignment_id1251, // 47 / 50,
+      1: assignment_id1251, 
     },
     {
-      2: assignment_id1251   // 150 / 150
+      2: assignment_id1251  
     }
   ],
   Learner132: [
@@ -132,10 +121,10 @@ const Learners = {
       avg: average132,
     },
     {
-      1: assignment_id1251, // 47 / 50,
+      1: assignment_id1251, 
     },
     {
-      2: assignment_id1322  // 150 / 150
+      2: assignment_id1322  
     }
   ]
  
@@ -144,6 +133,12 @@ const Learners = {
 
 console.log(Object.keys(Learners) && (Learners.Learner125))
 
+  let pass = 75;
+
+if (Learners.avg > pass)
+	console.log('Passed!');
+else
+	console.log('Failed.');
 
 
 
@@ -155,34 +150,10 @@ console.log(Object.keys(Learners) && (Learners.Learner125))
 
 
 function getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions) {
-  // here, we would process this data to achieve the desired result.
-  let learner_id1 = {
-    "id": 125
-    //compute average OUTPUT avg: 0.985, // (47 + 150) / (150 + 150)
-    // compute OUTPUT=  1: (submission.score / points_possible)
-    // compute OUTPUT =  2 : (submission.score / points_possible)
-
-  }
-  let learner_id2 = {
-    "id": 132
-    //compute average OUTPUT avg: 0.985, // (39 + 125) / (50 + 150)
-    // compute OUTPUT=  1: (submission.score / points_possible)
-    // compute OUTPUT =  2 : (submission.score / points_possible)
-  }
-
-  const result = [ //{LEARNER_ID1} && {LEARNER_ID2}
-    {
-      // id: 125,
-     Learners // avg: 0.985, // (47 + 150) / (50 + 150)
-      // 1: 0.94, // 47 / 50
-      // 2: 1.0 // 150 / 150
-    },
-    {
-      id: 132,
-      avg: 0.82, // (39 + 125) / (50 + 150)
-      1: 0.78, // 39 / 50
-      2: 0.833 // late: (140 - 15) / 150
-    }
+ 
+  const result = [ 
+   
+ (Learners.Learner125 (Learners.Learner132)) //I'm not sure why I was unable to show both learners in the console.  I tried to concat the two arrays and got an output of one large array with a length of 8.  So I undid that.  
   ];
 
   return result;

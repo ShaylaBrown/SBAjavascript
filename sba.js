@@ -142,13 +142,6 @@ else
 
 
 
-
-
-
-
-
-
-
 function getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions) {
  
   const result = [ 
